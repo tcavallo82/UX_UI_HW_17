@@ -126,3 +126,34 @@ h2 {
   font-weight: 500;
   color: white;
 }
+@media only screen and (max-width: 1000px) {
+  #heroGrid {
+    grid-template-areas:
+    "leftBlockTop rightBlockTop"
+    "leftBlockBottom rightBlockBottom";
+  }
+  .heroImg {
+    padding: 15px 200px 15px 200px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #heroGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-template-areas:
+    "leftBlockTop" 
+    "rightBlockTop"
+    "leftBlockBottom"
+    "rightBlockBottom";
+  }
+  .heroImg {
+    padding: 15px 100px 15px 100px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+  }
+}
